@@ -3,6 +3,7 @@ const webpack = require('webpack')
 
 module.exports = options => {
   return {
+    devtool: 'eval',
     entry: './src/index.js',
     output: {
       filename: 'bundle.js'
