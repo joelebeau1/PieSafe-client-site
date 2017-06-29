@@ -1,13 +1,20 @@
 {
-  "name": "piesafe-client-site",
+  "name": "pie-safe",
   "version": "0.1.0",
   "private": true,
   "author": "Joe LeBeau",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/joelebeau1/PieSafe-client-site",
+    "type": "git"
+  },
   "dependencies": {
+    "babel-cli": "^6.24.1",
     "babel-runtime": "^6.23.0",
+    "express": "^4.15.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
     "redux": "^3.7.1"
   },
   "devDependencies": {
