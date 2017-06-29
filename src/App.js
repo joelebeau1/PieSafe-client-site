@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
 import './App.css'
 
 class App extends Component {
@@ -7,12 +6,15 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0610/2881/products/Dutch_Apple_Pie_1024x1024.jpg?v=1446857245"
+            className="App-logo"
+            alt="logo"
+          />
+
+          <h2>Welcome to Pie Safe</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h3 className="App-intro">Good Pies for Good: because everyone deserves a piece</h3>
       </div>
     )
   }

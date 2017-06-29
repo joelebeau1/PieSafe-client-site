@@ -1,3 +1,6 @@
+const path = require('path')
+const webpack = require('webpack')
+
 module.exports = options => {
   return {
     entry: './src/index.js',
