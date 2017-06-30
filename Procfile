@@ -1,1 +1,1 @@
-web: yarn run prod
+web: webpack --config webpack.production.config.js && NODE_ENV=production node server.js
