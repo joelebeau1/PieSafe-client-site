@@ -4,6 +4,9 @@
   "private": true,
   "author": "Joe LeBeau",
   "main": "index.js",
+  "engines": {
+    "node": "8.0.0"
+  },
   "repository": {
     "url": "https://github.com/joelebeau1/PieSafe-client-site",
     "type": "git"
@@ -30,7 +33,7 @@
     "webpack-dev-server": "^2.5.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
