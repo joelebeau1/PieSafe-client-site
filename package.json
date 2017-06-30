@@ -16,11 +16,9 @@
     "expect": "^1.20.2",
     "express": "^4.15.3",
     "mocha": "^3.4.2",
-    "node-sass": "^4.5.3",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "webpack": "^3.0.0"
   },
