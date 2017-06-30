@@ -30,7 +30,7 @@
     "webpack-hot-middleware": "^2.18.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
     "prod": "yarn run build && NODE_ENV=production node server.js",
     "build": "webpack --config webpack.production.config.js",
     "test": "react-scripts test --env=jsdom",
