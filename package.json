@@ -1,40 +1,38 @@
 {
-  "name": "pie-safe",
+  "name": "piesafe-client-site",
   "version": "0.1.0",
   "private": true,
-  "author": "Joe LeBeau",
-  "main": "index.js",
-  "engines": {
-    "node": "8.0.0"
-  },
-  "repository": {
-    "url": "https://github.com/joelebeau1/PieSafe-client-site",
-    "type": "git"
-  },
+  "main": "server.js",
+  "license": "MIT",
   "dependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-runtime": "^6.23.0",
-    "express": "^4.15.3",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-redux": "^5.0.5",
-    "redux": "^3.7.1"
-  },
-  "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.5.2",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
-    "react-scripts": "1.0.7",
-    "redux-devtools": "^3.4.0",
-    "webpack": "^3.0.0",
-    "webpack-dev-server": "^2.5.0"
+    "css-loader": "^0.28.4",
+    "enzyme": "^2.9.1",
+    "expect": "^1.20.2",
+    "express": "^4.15.3",
+    "mocha": "^3.4.2",
+    "node-sass": "^4.5.3",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.0.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.10",
+    "webpack-dev-middleware": "^1.11.0",
+    "webpack-dev-server": "^2.5.0",
+    "webpack-hot-middleware": "^2.18.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "prod": "yarn run build && NODE_ENV=production node server.js",
+    "build": "webpack --config webpack.production.config.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
